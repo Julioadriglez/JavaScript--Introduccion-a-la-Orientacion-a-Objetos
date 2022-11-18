@@ -1,26 +1,17 @@
+//Importacion de clases
+import {cuentaCorriente} from '../cuentaCorriente.js';
+import {cliente} from '../cliente.js'
 
-//Definición de clases.
-class cliente {
-    nombreCliente;
-    dniCliente;
-    rutCliente
-}
+const cuentDeLeonardo = new cuentaCorriente();
 
-class cuentaCorriente{
-    numero;
-    saldo;
-    agencia;
+let saldo = cuentDeLeonardo.verSaldo();
+console.log('El saldo actual: '+saldo);
 
-    constructor() {
-        this.saldo = 0;
-        this.numero = '';
-        this.agencia = '';
-    }
+saldo = cuentDeLeonardo.depositoCuenta(100);
+console.log('el saldo actual es :'+saldo);
 
-    depositoCuenta(valor){
-        this.saldo += valor;
-    }
-    retirarCuenta(valor){
-        this.saldo -= valor;
-    }
-}
+saldo = cuentDeLeonardo.retirarCuenta(100);
+console.log('El saldo actual es: '+saldo);
+
+saldo = cuentDeLeonardo.depositoCuenta(45);
+console.log('el saldo actual es: '+saldo);
