@@ -1,0 +1,20 @@
+{
+  "name": "javascript--introduccion-a-la-orientacion-a-objetos",
+  "version": "1.0.0",
+  "description": "Curso de Alura Latam One Oracle Next Education: Formación Front End G3 - ONE JavaScript: Introducción a la Orientación a Objetos",
+  "main": "cliente.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Julioadriglez/JavaScript--Introduccion-a-la-Orientacion-a-Objetos.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Julioadriglez/JavaScript--Introduccion-a-la-Orientacion-a-Objetos/issues"
+  },
+  "homepage": "https://github.com/Julioadriglez/JavaScript--Introduccion-a-la-Orientacion-a-Objetos#readme",
+  "type":"module"
+}
