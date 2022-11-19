@@ -8,21 +8,21 @@ Cliente.nombreCliente = 'Leonardo';
 Cliente.dniCliente = '12345666';
 Cliente.rutCliente = '15666';
 
-const cuentDeLeonardo = new cuentaCorriente();
-cuentDeLeonardo.numero = '1';
-cuentDeLeonardo.agencia = '001';
-cuentDeLeonardo.cliente = Cliente;
+const cuentaDeLeonardo = new cuentaCorriente();
+cuentaDeLeonardo.numero = '1';
+cuentaDeLeonardo.agencia = '001';
+cuentaDeLeonardo.cliente = Cliente;
 
 console.log(cuentDeLeonardo);
 
-let saldo = cuentDeLeonardo.verSaldo();
+let saldo = cuentaDeLeonardo.verSaldo();
 console.log('El saldo actual: '+saldo);
 
-saldo = cuentDeLeonardo.depositoCuenta(100);
+saldo = cuentaDeLeonardo.depositoCuenta(100);
 console.log('el saldo actual es :'+saldo);
 
-saldo = cuentDeLeonardo.retirarCuenta(100);
+saldo = cuentaDeLeonardo.retirarCuenta(100);
 console.log('El saldo actual es: '+saldo);
 
-saldo = cuentDeLeonardo.depositoCuenta(45);
+saldo = cuentaDeLeonardo.depositoCuenta(45);
 console.log('el saldo actual es: '+saldo);
