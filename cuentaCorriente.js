@@ -1,10 +1,12 @@
 //definicion de clases
 export class cuentaCorriente{
+    cliente;
     numero;
-    #saldo;
     agencia;
+    #saldo;
 
     constructor() {
+        this.cliente = null;
         this.#saldo = 0;
         this.numero = '';
         this.agencia = '';
