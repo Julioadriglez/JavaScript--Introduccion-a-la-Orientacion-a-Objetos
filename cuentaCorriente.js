@@ -1,15 +1,25 @@
 //definicion de clases
+import { Cliente } from "./cliente.js";
 export class cuentaCorriente{
-    cliente;
+    #cliente;
     numero;
     agencia;
     #saldo;
 
-    constructor() {
-        this.cliente = null;
+    set cliente(valor){
+        if(valor instanceof Cliente)
+        this.#cliente = valor;
+    }
+
+    get cliente(){
+        return this.#cliente;
+    }
+
+    constructor(cliente, numero, agencia) {
+        this.cliente(cliente);
         this.#saldo = 0;
-        this.numero = '';
-        this.agencia = '';
+        this.numero = numero;
+        this.agencia = agencia;
     }
 
     depositoCuenta(valor){
