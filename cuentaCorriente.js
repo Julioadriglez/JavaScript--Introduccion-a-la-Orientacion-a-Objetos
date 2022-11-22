@@ -9,5 +9,8 @@ export class cuentaCorriente extends Cuenta{ //extends se usa para heredar carac
         super(tipo,cliente,numero,agencia,0);
         cuentaCorriente.cantidadCuentas ++;
     }
+    prueba() {
+        console.log('Metodo hijo');
+    }
 }
 
