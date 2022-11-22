@@ -25,6 +25,11 @@ export class Cuenta {
     }
 
     retirarCuenta(valor){
+        _retirarCuenta(valor,0);
+    }
+
+    _retirarCuenta(valor, comision){ //con "_" el metodo se hace privado
+        valor = valor *(1 + (comision/100));
         if(valor <= this.#saldo)
             this.#saldo -= valor;
         return this.#saldo;
