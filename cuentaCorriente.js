@@ -5,8 +5,8 @@ export class cuentaCorriente extends Cuenta{ //extends se usa para heredar carac
    
     static cantidadCuentas = 0;
 
-    constructor(tipo,cliente, numero, agencia,saldo) {
-        super(tipo,cliente,numero,agencia,0);
+    constructor(cliente, numero, agencia,saldo) {
+        super(cliente,numero,agencia,0);
         cuentaCorriente.cantidadCuentas ++;
     }
     retirarCuenta(valor){
