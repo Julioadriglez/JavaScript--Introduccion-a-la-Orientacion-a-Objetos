@@ -1,8 +1,11 @@
 export class Cuenta {
     #cliente;
     #saldo;
-    constructor(tipo,cliente, numero, agencia, saldo) {
-        this.tipo = tipo;
+    constructor(cliente, numero, agencia, saldo) {
+        if(this.constructor == Cuenta){
+            throw new Error('No se deben instanciarl objetos de la clase Cuenta'); //muestra un error  cuando se usa Clase Cuenta en consola
+            
+        }
         this.numero = numero;
         this.agencia = agencia;
         this.#cliente = cliente;
@@ -24,8 +27,8 @@ export class Cuenta {
         return this.#saldo;
     }
 
-    retirarCuenta(valor){
-        _retirarCuenta(valor,0);
+    retirarCuenta(valor){ //Es un metodo abstracto que teoricamente sirve pero no aplica ninguna comision y sea plica un error para que no suceda esto
+        throw new Error('Debe implementar el método retirarCuenta en su clase');
     }
 
     _retirarCuenta(valor, comision){ //con "_" el metodo se hace privado
