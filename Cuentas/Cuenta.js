@@ -45,7 +45,4 @@ export class Cuenta {
         this.retirarCuenta(valor);
         cuentaDestino.depositoCuenta(valor);
     }
-    prueba() {
-        console.log('Metodo padre');
-    }
 }
