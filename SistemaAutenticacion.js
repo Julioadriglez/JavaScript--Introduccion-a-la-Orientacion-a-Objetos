@@ -1,7 +1,5 @@
-export class sistemaAutenticacion {
-    login(empleado, clave){
-        if (empleado.clave == clave)
-            return true;
-        return false
+export class SistemaAutenticacion {
+    static login(usuario, clave){
+        return usuario.autenticable(clave);
     }
 }
